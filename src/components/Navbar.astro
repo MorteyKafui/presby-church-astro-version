@@ -1,0 +1,23 @@
+---
+import MobileNav from "./MobileNav";
+---
+
+<nav class="bg-neutral-800 text-white">
+  <div class="flex justify-between items-center max-w-6xl mx-auto px-10 py-5">
+    <h1 class="text-2xl font-bold tracking-widest">Acme</h1>
+    <ul class="lg:flex justify-between items-center gap-5 hidden">
+      <li>
+        <a href="/">Home</a>
+      </li>
+      <li>
+        <a href="/about">About</a>
+      </li>
+      <li>
+        <a href="#">Contact</a>
+      </li>
+    </ul>
+    <div class="block md:hidden">
+      <MobileNav client:visible />
+    </div>
+  </div>
+</nav>
